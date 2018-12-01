@@ -1,0 +1,24 @@
+
+- key_size_opts = (1..5).map { |s| [s,s] }
+
+.wrapper#crack
+  %h1 Crack My Pass
+
+  = form_tag 'crack_my_pass', id: 'form-crack' do
+    %p
+      %label encrypted text (numbers comma separated):
+      = text_area_tag :encrypted_text, nil, minlength: 1
+    %p
+      %label key size:
+      = select_tag :key_size, options_for_select(key_size_opts)
+    %p
+      = button_tag 'Run' , class: 'submit-button' , type: :submit
+
+  #guesses
+    %h2.title Guesses
+    %table
+      %thead
+        %tr
+          %th key
+          %th guess
+      %tbody.list

@@ -1,0 +1,52 @@
+// Place all the styles related to the crack_my_pass controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#crack {
+  width: 400px;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  padding: 20px 20px 30px;
+  text-align: center;
+  h1 {
+    margin-top: 0;
+  }
+  textarea, select {
+    width: 100%;
+  }
+  select[name="key_size"] {
+    width: 100px;
+    display: block;
+    margin: auto;
+  }
+  button[type="submit"] {
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+    font-weight: bold;
+    background: cyan;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 2px #ccc;
+  }
+  label {
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  #guesses {
+    table {
+      width: 100%;
+    }
+    td {
+      padding: 0 10px;
+    }
+    .error {
+      color: red;
+    }
+    .title {
+
+    }
+    .list {
+
+    }
+  }
+}
