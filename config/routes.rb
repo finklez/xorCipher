@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root to: "crack_my_pass#new"
+
   resources :crack_my_pass, only: [:new, :create]
 
 
